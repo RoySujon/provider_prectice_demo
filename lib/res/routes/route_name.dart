@@ -3,4 +3,5 @@ class RouteName {
   static String favoriteScreen = '/favoriteScreen';
   static String darkScreen = '/darkScreen';
   static String notifyListenerScreen = '/notifyListenerScreen';
+  static String loginView = '/loginView';
 }

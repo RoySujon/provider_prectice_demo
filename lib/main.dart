@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:provider_prectice_demo/res/provider/provider_list.dart';
 import 'package:provider_prectice_demo/res/provider/theme_changer.dart';
 import 'package:provider_prectice_demo/res/routes/routes.dart';
+import 'package:provider_prectice_demo/screen/login/login_view.dart';
 
 import 'package:provider_prectice_demo/screen/value_notifi_listener.dart';
 // import 'package:provider_prectice_demo/screen/favorite/favorite_screen.dart';
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
             ),
             // home: const DarkScreen(),
 
-            home: NotifyListenerScreen(),
+            home: LoginView(),
             routes: AppRoutes.routes(),
           ),
         );
