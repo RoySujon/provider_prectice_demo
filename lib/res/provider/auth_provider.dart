@@ -51,7 +51,7 @@ class AuthProvider extends ChangeNotifier {
     } catch (e) {
       print(e.toString());
     }
-
     notifyListeners();
+    return resBody;
   }
 }

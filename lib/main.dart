@@ -5,7 +5,7 @@ import 'package:provider_prectice_demo/res/provider/theme_changer.dart';
 import 'package:provider_prectice_demo/res/routes/routes.dart';
 import 'package:provider_prectice_demo/screen/login/login_view.dart';
 
-import 'package:provider_prectice_demo/screen/value_notifi_listener.dart';
+// import 'package:provider_prectice_demo/screen/value_notifi_listener.dart';
 // import 'package:provider_prectice_demo/screen/favorite/favorite_screen.dart';
 
 void main() {

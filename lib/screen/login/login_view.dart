@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_prectice_demo/res/provider/auth_provider.dart';
+import 'package:provider_prectice_demo/res/routes/route_name.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({super.key});
@@ -43,8 +44,16 @@ class _LoginViewState extends State<LoginView> {
                       shape: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.blue)),
                       onPressed: () {
-                        value.login(emailController.text.toString(),
-                            passwordController.text.toString(), context);
+                        value
+                            .login(emailController.text.toString(),
+                                passwordController.text.toString(), context)
+                            .then((valu) {
+                          if (valu['token'] == 'QpwL5tke4Pnpja7X4') {
+                            Navigator.pushNamed(context, RouteName.homeScreen);
+                          } else {
+                            print('object');
+                          }
+                        });
                       },
                       child: value.loading
                           ? Text('Login')
