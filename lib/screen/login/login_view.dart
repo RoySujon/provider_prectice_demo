@@ -46,7 +46,9 @@ class _LoginViewState extends State<LoginView> {
                         value.login(emailController.text.toString(),
                             passwordController.text.toString(), context);
                       },
-                      child: Text('Login'),
+                      child: value.loading
+                          ? Text('Login')
+                          : Center(child: CircularProgressIndicator()),
                     )),
           ],
           mainAxisAlignment: MainAxisAlignment.center,
